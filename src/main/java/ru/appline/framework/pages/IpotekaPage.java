@@ -80,7 +80,8 @@ public class IpotekaPage extends BasePage {
                     wait.until(ExpectedConditions.textToBePresentInElement(w.findElement(By.xpath(dataNumber)), getPriceString(Integer.parseInt(val))));
                 }catch (TimeoutException e){
 
-                    Assert.assertTrue("Значение " + w.getText() + " не совпадает!", (val.equals(getNumber(w.findElement(By.xpath(dataNumber))))));
+                    Assert.fail("Значение " + w.getText() + " не совпадает!");
+
                 }
             }
                 return this;

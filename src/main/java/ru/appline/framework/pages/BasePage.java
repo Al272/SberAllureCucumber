@@ -48,7 +48,7 @@ public class BasePage {
      *
      * @see WebDriverWait
      */
-    protected WebDriverWait wait = new WebDriverWait(getDriver(), 3, 1000);
+    protected WebDriverWait wait = new WebDriverWait(getDriver(), 5, 1000);
 
     /**
      * Конструктор позволяющий инициализировать все странички и их эелементы помеченные анотацией {@link FindBy}
