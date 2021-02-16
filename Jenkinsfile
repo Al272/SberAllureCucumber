@@ -1,5 +1,5 @@
 pipeline{
-    agent { label 'mbaykova' }
+    agent any
     stages{
         stage('Run Tests'){
             steps{
