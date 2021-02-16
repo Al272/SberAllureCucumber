@@ -9,9 +9,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import ru.appline.framework.managers.DriverManager;
 import ru.appline.framework.managers.InitManager;
+import ru.appline.framework.managers.TestPropManager;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
+
+import static ru.appline.framework.managers.DriverManager.getDriver;
+import static ru.appline.framework.utils.PropConst.APP_URL;
 
 public class Hooks {
 
