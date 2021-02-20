@@ -29,7 +29,7 @@ public class Hooks {
         if (scenario.isFailed()) {
             Allure.addAttachment("failureScreenshot", "image/png", addScreenshot(), "png");
         }
-
+        InitManager.quitFramework();
     }
 
     private static InputStream addScreenshot() {
